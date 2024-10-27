@@ -1,8 +1,8 @@
 streamlit==1.26.0
 PyPDF2==3.0.1
-googletrans==4.0.0rc1
+googletrans==4.0.0rc1  
 gtts==2.3.2
-time         
+time==built-in          
 deep_translator==1.10.1
-io           
-os            
+io==built-in            
+os==built-in            

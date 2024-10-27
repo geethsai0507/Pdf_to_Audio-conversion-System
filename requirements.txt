@@ -1,9 +1,8 @@
-streamlit
-PyPDF2
-googletrans
-gtts
-time
-deep_translator
-io
-gtts
-os
+streamlit==1.26.0
+PyPDF2==3.0.1
+googletrans==4.0.0rc1
+gtts==2.3.2
+time         
+deep_translator==1.10.1
+io           
+os            

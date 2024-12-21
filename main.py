@@ -159,5 +159,21 @@ if uploaded_file:
         # Play the final audio file if available
         if audio_file_path:
             st.audio(audio_file_path, format='audio/mp3', start_time=0)
+
+            # Provide an option to download the translated text file
+            text_filename = f"{file_name}_{file_count - 1}.txt"
+            text_save_path = os.path.join(output_dir, text_filename)
+            
+            # Button to download the translated text file
+            with open(text_save_path, "r", encoding="utf-8") as text_file:
+                text_content = text_file.read()
+
+            st.download_button(
+                label="Download Translated Text",
+                data=text_content,
+                file_name=text_filename,
+                mime="text/plain"
+            )
+
     else:
         st.warning("Please provide an output directory.")
